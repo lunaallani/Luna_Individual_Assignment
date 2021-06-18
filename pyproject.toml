@@ -1,0 +1,17 @@
+[build-system]
+requires = ["flit_core >=2,<4"]
+build-backend = "flit_core.buildapi"
+
+[tool.flit.metadata]
+module = "ie_bike_model"
+author = "Luna Allani"
+author-email = "lallani@student.ie.edu"
+description-file = "README.md"
+requires= [
+    "pandas", "numpy","sklearn","joblib"
+]
+
+[tool.flit.metadata.requires-extra]
+dev=[
+    "pytest", "black"    
+]
